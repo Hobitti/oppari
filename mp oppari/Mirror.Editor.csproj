@@ -56,25 +56,25 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mirror\Editor\Empty\Logging\LogLevelsGUI.cs" />
-    <Compile Include="Assets\Mirror\Editor\SceneDrawer.cs" />
-    <Compile Include="Assets\Mirror\Editor\InspectorHelper.cs" />
-    <Compile Include="Assets\Mirror\Editor\Empty\Logging\NetworkLogSettingsEditor.cs" />
-    <Compile Include="Assets\Mirror\Editor\AndroidManifestHelper.cs" />
-    <Compile Include="Assets\Mirror\Editor\Empty\ScriptableObjectUtility.cs" />
-    <Compile Include="Assets\Mirror\Editor\Empty\SyncVarDrawer.cs" />
     <Compile Include="Assets\Mirror\Editor\SyncObjectCollectionsDrawer.cs" />
     <Compile Include="Assets\Mirror\Editor\SyncVarAttributeDrawer.cs" />
-    <Compile Include="Assets\Mirror\Editor\NetworkScenePostProcess.cs" />
-    <Compile Include="Assets\Mirror\Editor\Empty\Logging\LogLevelWindow.cs" />
-    <Compile Include="Assets\Mirror\Editor\Empty\LogLevelWindow.cs" />
-    <Compile Include="Assets\Mirror\Editor\Empty\Logging\LogSettingsEditor.cs" />
-    <Compile Include="Assets\Mirror\Editor\NetworkInformationPreview.cs" />
     <Compile Include="Assets\Mirror\Editor\Welcome.cs" />
     <Compile Include="Assets\Mirror\Editor\Empty\EnterPlayModeSettingsCheck.cs" />
+    <Compile Include="Assets\Mirror\Editor\Empty\Logging\LogLevelsGUI.cs" />
+    <Compile Include="Assets\Mirror\Editor\Empty\Logging\NetworkLogSettingsEditor.cs" />
+    <Compile Include="Assets\Mirror\Editor\AndroidManifestHelper.cs" />
+    <Compile Include="Assets\Mirror\Editor\Empty\LogLevelWindow.cs" />
+    <Compile Include="Assets\Mirror\Editor\Empty\ScriptableObjectUtility.cs" />
+    <Compile Include="Assets\Mirror\Editor\Empty\SyncVarDrawer.cs" />
+    <Compile Include="Assets\Mirror\Editor\NetworkInformationPreview.cs" />
+    <Compile Include="Assets\Mirror\Editor\EditorHelper.cs" />
+    <Compile Include="Assets\Mirror\Editor\Empty\Logging\LogLevelWindow.cs" />
     <Compile Include="Assets\Mirror\Editor\NetworkManagerEditor.cs" />
     <Compile Include="Assets\Mirror\Editor\NetworkBehaviourInspector.cs" />
-    <Compile Include="Assets\Mirror\Editor\EditorHelper.cs" />
+    <Compile Include="Assets\Mirror\Editor\SceneDrawer.cs" />
+    <Compile Include="Assets\Mirror\Editor\InspectorHelper.cs" />
+    <Compile Include="Assets\Mirror\Editor\NetworkScenePostProcess.cs" />
+    <Compile Include="Assets\Mirror\Editor\Empty\Logging\LogSettingsEditor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Mirror\Editor\Mirror.Editor.asmdef" />
@@ -335,14 +335,23 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\unity\2021.3.18f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.CecilX.Rocks">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX.Pdb">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@2.0.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CecilX">
+      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
@@ -361,15 +370,6 @@
     </Reference>
     <Reference Include="ReportGeneratorMerged">
       <HintPath>Library\PackageCache\com.unity.testtools.codecoverage@1.2.2\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX.Rocks">
-      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Rocks.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX.Pdb">
-      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Pdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX">
-      <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.dll</HintPath>
     </Reference>
     <Reference Include="Mono.CecilX.Mdb">
       <HintPath>Assets\Mirror\Plugins\Mono.Cecil\Mono.CecilX.Mdb.dll</HintPath>
